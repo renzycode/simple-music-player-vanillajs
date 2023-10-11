@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="lyrics">
+      <h1 id="lyrics-song-name">Ligaya</h1>
+      <h5 id="lyrics-song-artist">song by mrld</h5> <br>
+      <h2>Lyrics</h2>
+      <p class="music-lyrics"></p>
+    </div>
+    <div class="left-side">
+      <div class="container">
+        <div class="top-bar">
+          <i class="material-icons">favorite_border</i>
+          <span>Now Playing</span>
+          <i class="material-icons">add</i>
+        </div>
+        <div class="img-area">
+          <img src="" alt="">
+        </div>
+        <div class="song-details">
+          <p class="name"></p>
+          <p class="artist"></p>
+        </div>
+        <div class="progress-area">
+          <div class="progress-bar">
+            <audio id="main-audio" src=""></audio>
+          </div>
+          <div class="song-timer">
+            <span class="current-time">0:00</span>
+            <span class="max-duration">0:00</span>
+          </div>
+          <audio id="main-audio" src=""></audio>
+        </div>
+        <div class="controls">
+          <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+          <i id="prev" class="material-icons prev">fast_rewind</i>
+          <div class="play-pause">
+            <i class="material-icons play">play_arrow</i>
+          </div>
+          <i id="next" class="material-icons next">fast_forward</i>
+          <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+      </div>
+      <div class="music-list">
+        <div class="header">
+          <div class="row">
+            <i class="list material-icons">queue_music</i>
+            <span>Music List</span>
+            <hr>
+          </div>
+          <i id="close" class="material-icons">close</i>
+        </div>
+        <ul>
+          <ul id="render-musics-here">
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="js/music-list.js"></script>
+  <script src="js/script.js"></script>
+  </div>
+</body>
+
+</html>
